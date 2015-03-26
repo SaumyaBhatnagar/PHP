@@ -36,12 +36,12 @@
 .btn-default {
 	background: none;
 	filter: none;
-	border-color: #4d4641;
+	border-color: #e76817;
 }
 .btn-default:hover, .btn-default:focus {
 	background: #4d4641;
-	border-color: #4d4641;
-	color: #fff;
+	border-color:#e76817;
+	color: #e76817;
 }
 .btn-default:active, .btn-default.active {
 	background-color: rgba(0, 0, 0, 0);

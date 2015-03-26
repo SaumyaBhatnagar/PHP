@@ -51,8 +51,8 @@
 	<body>
   
 		<div id="wrapper">
-			<!--Header Section Start Here -->	
-            <header id="header" class="header-second">
+			<!--Header Section Start Here -->
+			<header id="header" class="header-second">
 				<div class="container hidden-xs">
 					<div class="row primary-header">
 						<div class="col-xs-12 col-sm-4 col-md-4">
@@ -140,7 +140,7 @@
 				</div>
 
 			</header>
-            <!-- Header Section End Here -->
+			<!-- Header Section End Here -->
 			<!-- site content -->
 			<div id="main">
 			<!-- Breadcrumb Section Start Here -->
@@ -148,9 +148,9 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-xs-12">
-								<h1 style="color:white">Volunteer Homepage</h1>
+								<h1 style="color:white">Corporate Homepage</h1>
 								
-						  </div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -173,11 +173,11 @@
 									<div class="tab-wrap col-sm-12">
 										<!-- Nav tabs -->
 										<ul class="nav nav-tabs nav-tabs_less-space" role="tablist">
-										  <li class="active col-sm-3"><a href="#signin" role="tab" data-toggle="tab">Volunteer</a></li>
-										  <li class="col-sm-3"><a href="#billing" role="tab" data-toggle="tab">Donate</a></li>
+										  <li class="active col-sm-3"><a href="#signin" role="tab" data-toggle="tab">Create Event</a></li>
+										  <li class="col-sm-3"><a href="#billing" role="tab" data-toggle="tab">Crowdfund</a></li>
 										  <li class="col-sm-3"><a href="#review" role="tab" data-toggle="tab">Profile</a></li>
 										  <li class="col-sm-3"><a href="#confirmation" role="tab" data-toggle="tab">Blog</li>
-                                          </ul>
+										</ul>
 										
 										<!-- Tab panes -->
 										<div class="tab-content">
@@ -188,14 +188,18 @@
 										  			<h4>Fill in the form, and let's begin!</h4>
 										  			<form role="form" >
 										  				<div class="form-group">
-															<label for="name">NGO Name/Cause<span>*</span></label>
+															<label for="name">Event Name</label>
 															<input type="text" class="form-control" id="name">
 														</div>
                                                         				
 														<div class="form-group">
-															<label for="password">Zip<span>*</span></label>
+															<label for="password">Event Location<span>*</span></label>
 															<input type="text" class="form-control" id="password">
 														</div>
+                                                        <div class="form-group">
+														<label for="comment">Event Description</label>
+														<textarea class="form-control" id="comment"></textarea>
+													</div>
 														<div class="form-group btns-wrapper">
 															<button type="submit" class="btn btn-default btn-lg">GO!</button>
 															<a href="#" class="pull-right frgt-pwd"> Want us to recommend?</a>
@@ -215,99 +219,25 @@
 										  <!-- Billing & Shipping Section Start Here-->
 										  <div class="tab-pane" id="billing">
 										  	<div class="row">
-										  		<div class="col-sm-6">
-										  			<h4>Your Information</h4>
-										  			<form role="form" >
-										  				<div class="form-group">
-															<label for="country">Country<span>*</span></label>
-															<input type="text" class="form-control" id="country">
-														</div>
-														<div class="form-group col-sm-6 col-small-left">
-															<label for="fname">First Name<span>*</span></label>
-															<input type="text" class="form-control" id="fname">
-														</div>
-														<div class="form-group col-sm-6 col-small-right">
-															<label for="lname">Last Name<span>*</span></label>
-															<input type="text" class="form-control" id="lname">
-														</div>
-														<div class="form-group">
-															<label for="company">NGO Name</label>
-															<input type="text" class="form-control" id="company">
-														</div>
-														<div class="form-group">
-															<label for="address">Address<span>*</span></label>
-															<input type="text" class="form-control" id="address">
-															<input type="text" class="form-control">
-														</div>
-														<div class="form-group">
-															<label for="city">Town / City<span>*</span></label>
-															<input type="text" class="form-control" id="city">
-														</div>
-														<div class="form-group col-sm-6 col-small-left">
-															<label>County</label>
-															<input type="text" class="form-control">
-														</div>
-														<div class="form-group col-sm-6 col-small-right">
-															<label for="pcode">Postcode <span>*</span></label>
-															<input type="text" class="form-control" id="pcode">
-														</div>
-														<div class="form-group col-sm-6 col-small-left">
-															<label for="mail">Email Address</label>
-															<input type="text" class="form-control" id="mail">
-														</div>
-														<div class="form-group col-sm-6 col-small-right">
-															<label for="phone">Phone <span>*</span></label>
-															<input type="text" class="form-control" id="phone">
-														</div>
-														<div class="checkbox">
-														    <label><input type="checkbox"> Create an account?</label>
-														</div>
-														<div class="form-group">
-															<button type="submit" class="btn btn-default btn-lg">continue</button>
-														</div>
-										  			</form>
+										  		<div class="col-sm-6" style="margin-left:25%">
+										  			<h4 style="align-content:center">Crowdfund Your Campaign</h4>
+										  			<div class="video-section">
+									<img  src="assets/img/video-pic2.jpg" data-video="http://www.youtube.com/embed/wN3gueLT0D8?autoplay=1" alt=""> 
+									<div class="control">
+										<h2>Watch our media video</h2>
+										<a href="#" class="play-btn"> <i class="fa fa-play-circle-o"></i> </a>
+									</div>
                                                     <div class="btns-wrapper">
-														<a href="#" class="btn btn-default grouped">Create an account </a>
-														<a href="#" class="btn btn-default grouped">Donate as a guest </a>
+														<a href="#" class="btn btn-default grouped">Browse </a>
+														<a href="#" class="btn btn-default grouped"> Upload </a>
 													</div>
 										  		</div>
-										  		<div class="col-sm-6">
-										  			<h4>Payment Method</h4>
-										  			<section class="payment-option">
-												
-												<form role="form">
-											  		<div class="radio">
-													  <label>
-													    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-													    Direct Bank Transfer
-													    <small>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order wont be shipped until the funds have cleared in our account.</small>
-													  </label>
-													</div>
-													<div class="radio">
-													  <label>
-													    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-													    Cheque Payment
-													  </label>
-													</div>
-													<div class="radio">
-													  <label>
-													    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
-													    PayPal <img src="assets/img/paypal.jpg" alt="" />
-													  </label>
-													</div>
-													<div class="btns-wrapper">
-														<a href="#" class="btn btn-default grouped">Donate </a>
-													</div>
-                                                    <div class="btns-wrapper">
-														<a href="crowdfund.html" class="btn btn-default grouped">Find a Crowdfunding Campaign </a>
-													</div>
-											  	</form>
-											</section>
-										  		</div>
+                                                </div>
+										  		
 										  	</div>
 										  </div>
 										   <!-- Billing & Shipping Section Ends Here-->
-										 
+										   
 										  <!-- Review & Payment Section Start Here-->
 										  <div class="tab-pane" id="review">
 										    <h4>Saumya's Profile </h4>
@@ -443,6 +373,8 @@
 													</div>
 												</div>
 											</section>
+                                            <p>
+                                            <img src="assets/img/Trending.jpg" style="padding-top:10%; padding-left:20%"></p>
 											<!-- AddtoCart Section End Here-->
 											<!-- Payment Section Start Here-->
 											

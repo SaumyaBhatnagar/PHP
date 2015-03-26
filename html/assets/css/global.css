@@ -213,11 +213,11 @@ input:focus,textarea:focus,.btn:focus,.zoom img{
  ----------------------------------------*/
 
 .btn-theme {
-	color: #fff;
+	color: #e76817;
 	border-radius: 0;
 }
 .btn-theme:hover, .btn.btn-theme:focus {
-	color: #fff;
+	color: #e76817;
 }
 /*
  3.4) Img Thumb
@@ -729,7 +729,7 @@ blockquote footer:before, .blockquote-reverse footer:after {
  4.1) Header First Style
  ----------------------------------------*/
 #header {
-	background: #26211d;
+	background: ;
 	position:relative;
 	z-index:99;
 }
@@ -788,7 +788,7 @@ blockquote footer:before, .blockquote-reverse footer:after {
 	font-family: 'socialico_plusregular';
 }
 .social-icons a:hover, .social-icons a:focus {
-	color: #fff;
+	color: #EA8825;
 }
 .navbar-collapse {
 	padding-left: 0;
@@ -955,6 +955,9 @@ a.brand img {
 	-ms-transition: all 0.4s ease-in-out;
 	-o-transition: all 0.4s ease-in-out;
 	transition: all 0.4s ease-in-out;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 #header.fixed{
 	position: fixed;
@@ -976,15 +979,19 @@ a.brand img {
  4.2) Header Second Style
  ----------------------------------------*/
 .header-second  .navbar{
-	display:table;
-	width:100%;
-	height:103px;
+	display: table;
+	width: 100%;
+	height: 15%;
+	background-color: #e76817;
+	max-height: none;
+	max-width: none;
 }
 
 .header-second .nav-content{
-	display:table-cell;
-	width:100%;
-	vertical-align:middle;
+	display: table;
+	width: 100%;
+	vertical-align: middle;
+	background-color: #e76817;
 }
 .touch-by-mail{
 	float:right;
@@ -994,15 +1001,17 @@ a.brand img {
 	margin:0 35px;
 }
 .organization{
-	color:#5c534b;
-	display:inline-block;
-	line-height:3;
+	color: #5c534b;
+	display: inline-block;
+	line-height: 3;
+	font-size: large;
 }
 .touch-by-mail:hover{
-	color:#ecc731;
+	color:#EA8825;
 }
 .header-second .primary-header{
-	padding:8px 0 8px;
+	padding: 8px 0 8px;
+	font-size: medium;
 }
 .header-second .btn-volunteer{
 	padding: 6px 22px;
@@ -1024,6 +1033,11 @@ margin-left: 0;
 }
 .header-second .btn-default:hover{
 	background: #26211d;
+	-webkit-box-shadow: 0px 0px #e76817;
+	box-shadow: 0px 0px #e76817;
+	background-clip: border-box;
+	border-color: #e76817;
+	color: #EA8825;
 }
 .header-second .social-icons{
 	margin-bottom:0;
@@ -1148,26 +1162,39 @@ display: block;
  5.1) Footer First
  ----------------------------------------*/
 #footer {
-	padding: 86px 0 0;
+	padding-top: 4%;
+	padding-left: 0;
+	padding-bottom: 0;
 	background: #32302f;
 	color: #8f8b89;
+	border-radius: 2r;
+	border-collapse: collapse;
+	background-origin: border-box;
+	background-clip: border-box;
+	position: static;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	max-height: 10%;
 }
 #footer ul{
 	list-style:none;
 }
 #footer a[href^="mailto"] {
-	color: #8f8b89;
+	color: #e76817;
 }
 .footer-logo {
-	margin-bottom: 32px;
+	margin-bottom: 3%;
+	color: #e76817;
 }
 .footer-logo a{
-	margin-top:-14px;
+	margin-top:-54%;
 	display:inline-block;
+	color:#e76817;
 }
 #footer p {
 	line-height: 1.7;
-	margin-bottom: 30px;
+	margin-bottom: 3%;
 	font-size: 14px;
 	color: #8f8b89;
 }
@@ -1178,7 +1205,7 @@ display: block;
 	color:#8f8b89;
 }
 #footer address > span {
-	margin-bottom: 6px;
+	margin-bottom: 2%;
 }
 #footer address span {
 	display: block;
@@ -1186,9 +1213,9 @@ display: block;
 }
 #footer address .fa {
 	font-size: 17px;
-	width: 27px;
+	width: 27%;
 	float: left;
-	margin-top: 6px;
+	margin-top: 6%;
 }
 #footer .twitter-update a {
 	color: #8f8b89;
@@ -1208,8 +1235,10 @@ display: block;
 }
 #footer h6 {
 	font-weight: 700;
-	color: #fff;
-	margin: 5px 0 35px;
+s
+	color: #e76817;
+	margin: 5% 0 15%;
+	color: #e76817;
 }
 #footer .comment-time {
 	color: #65615e;
@@ -1244,14 +1273,14 @@ display: block;
 	height: 45px;
 	vertical-align: top;
 	background: none;
-	padding: 10px 20px;
+	padding: 10% 20%;
 }
 .sign-up .btn-theme:hover, .sign-up .btn-theme:focus {
 	color: #fff;
 }
 #footer .social-icons {
 	float: left;
-	margin: -16px 0 0;
+	margin: -16% 0 0;
 }
 #footer .social-icons > li {
 	margin-left: 20px;
@@ -1281,10 +1310,11 @@ display: block;
 5.2) Footer Second
  ----------------------------------------*/
 .second-footer nav  li{
-	margin-bottom:7px;
+	margin-bottom:7%;
 }
 .second-footer .footer-logo {
-margin-bottom: 24px;
+margin-bottom: 4%;
+color: #e76817;
 }
 .flickr ul{
 	margin:0;
@@ -1323,7 +1353,7 @@ transition: all 0.4s ease-in-out;
 	display:inline-block;
 	font-family: 'Playfair Display', serif;
 	font-style: italic;
-	
+	color:#e76817;
 	
 }
 .footer-nav ul{
@@ -1331,7 +1361,7 @@ transition: all 0.4s ease-in-out;
 	padding:0;
 }
 .second-footer .copyright{
-	text-align:left;
+	text-align:center;
 }
 
  /*
@@ -1360,7 +1390,7 @@ transition: all 0.4s ease-in-out;
 }
 .footer-third .btn-wrapper .btn{
 	padding: 7px 16px;
-	min-width: 117px;
+	min-width: 17px;
 }
 .footer-third .footer-logo {
 margin-bottom: 13px;

@@ -19,7 +19,9 @@
 
 	/*Header Section*/
 	.header-second nav {
-		min-height:103px;
+
+
+
 	}
 	.navbar-nav > li > .dropdown-menu {
 		position: absolute;
@@ -90,9 +92,7 @@
 		margin-bottom: 60px;
 	}
 	.processes > .col-xs-12 {
-	/* [disabled]padding: 10px; */
-	margin-bottom: 0;
-	/* [disabled]margin-left: 10%; */
+		margin-bottom: 0;
 	}
 	/* save lives	*/
 	.save-lives .btn-default {

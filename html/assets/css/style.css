@@ -1453,7 +1453,7 @@ main-slider .tp-caption .btn.btn-default {
 	padding-right: 69px
 }
 .helping-child .btn-theme {
-	color: #ecc731;
+	color: #e76817;
 }
 .helping-child .btn-theme:hover, .helping-child .btn-theme:focus {
 	color: #fff;
@@ -2813,7 +2813,7 @@ body .ui-widget-header {
 	content: "";
 }
 .checkout ul.nav-tabs li.active a {
-	background-color: #ecc731;
+	background-color: #EA8825;
 	color: #26211d;
 	border: none;
 }
@@ -3117,4 +3117,3 @@ body .ui-widget-header {
 		font-size:38px;
 	}
 }
-
