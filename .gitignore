@@ -1,0 +1,6 @@
+### IDEA IntelliJ/ PHP Webstorm related ###
+.idea/
+*.iml
+
+### OSX related ###
+.DS_Store
