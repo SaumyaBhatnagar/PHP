@@ -289,13 +289,10 @@ $('#accordion .panel-heading').click(function() {
 $('#accordion-right .panel-heading').click(function() {
 	$('#accordion-right .fa-minus').removeClass('fa-minus');
 	if($(this).parents('.panel').find('.panel-collapse').hasClass('in')){
-		
-		
-		
+
 	}
 	else{
 		$(this).find('.collape-plus').addClass('fa-minus');
-		
 	}
 })
 
@@ -324,7 +321,7 @@ if($(window).width()>=768){
 			$('.bottom-line').removeClass('bottom-line');
 			
 			$('.header-second nav>ul').fadeIn();
-		}
+		}
 	})
 }
 //Donate form button
@@ -338,7 +335,6 @@ $('.dropdown-menu a').click(function(){
 		var donation_type = $(this).text();
 		$('#dropdownMenu1 small').text(donation_type)
 
-	
 })
 
 //EqualHeight Function	
@@ -357,9 +353,8 @@ var highestBox_1 = 0;
 		}
 	});
 	$('.equal-box ').height(highestBox_1);
-	
-	
-	
+
+
 // Price Range Slider fucntion 
 if($( "#slider-range" ).length){
 $( "#slider-range" ).slider({
@@ -372,50 +367,55 @@ $( "#slider-range" ).slider({
 			}
 		});
 		$( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-			" - $" + $( "#slider-range" ).slider( "values", 1 ) ); 	}
-//video-placeholder function
-       $('.embed-responsive-16by9 img').click(function(){
-        video = '<iframe src="'+ $(this).attr('data-video') +'"></iframe>';
-        
-        $(this).after(video);
-        
-     });
-       $('.play-btn').click(function(){
-        video1 = '<iframe src="'+ $('.video-section img').attr('data-video') +'"></iframe>';
-        
-        $('.video-section img').after(video1);
-     return false; 	
-     
-    });if(!isMobile){
-			var animSection = function() {
-				$('.anim-section').each(function() {
-					if ($(window).scrollTop() > ($(this).offset().top - $(window).height() / 1.15)) {
-						$(this).addClass('animate')
-					}
-				})
+			" - $" + $( "#slider-range" ).slider( "values", 1 ) ); 	
+}
+
+	//video-placeholder function
+	$('.embed-responsive-16by9 img').click(function () {
+		video = '<iframe src="' + $(this).attr('data-video') + '"></iframe>';
+
+		$(this).after(video);
+
+	});
+
+	$('.play-btn').click(function () {
+		video1 = '<iframe src="' + $('.video-section img').attr('data-video') + '"></iframe>';
+
+		$('.video-section img').after(video1);
+		return false;
+
+	});
+
+if(!isMobile){
+	var animSection = function () {
+		$('.anim-section').each(function () {
+			if ($(window).scrollTop() > ($(this).offset().top - $(window).height() / 1.15)) {
+				$(this).addClass('animate')
 			}
-			
-				if ($('.anim-section').length) {
-				animSection()
-				$(window).scroll(function() {
-					animSection()
-				})
-			}
-			
-			$(window).load(function(){
-				if ($('.parallax').length) {
-      $('.parallax').each(function() {
-       parallax($(this), 0.1);
-      })
-     }
 		})
-			$(window).scroll(function(){
-				if ($('.parallax').length) {
-      $('.parallax').each(function() {
-       parallax($(this), 0.1);
-      })
-     }
+	}
+
+	if ($('.anim-section').length) {
+		animSection();
+		$(window).scroll(function () {
+			animSection();
+		})
+	}
+
+	$(window).load(function () {
+		if ($('.parallax').length) {
+			$('.parallax').each(function () {
+				parallax($(this), 0.1);
 			})
+		}
+	});
+	$(window).scroll(function () {
+		if ($('.parallax').length) {
+			$('.parallax').each(function () {
+				parallax($(this), 0.1);
+			})
+		}
+	});
 			
 			//Progressbar
 	if ($('.progressbar').length) {
@@ -440,7 +440,7 @@ $( "#slider-range" ).slider({
 		
   var parallax = function(id, val) {
     if ($(window).scrollTop() > id.offset().top - $(window).height() && $(window).scrollTop() < id.offset().top + id.outerHeight()) {
-     var px = parseInt($(window).scrollTop() - (id.offset().top - $(window).height()))
+     var px = parseInt($(window).scrollTop() - (id.offset().top - $(window).height()));
      px *= -val;
      id.css({
       'background-position' : 'center ' + px + 'px'
@@ -452,29 +452,26 @@ $( "#slider-range" ).slider({
 
 //Sticky Header Yes or No Activate Function
 $('#header').attr('data-sticky','no') //Choose here yes or no
-  			fixedNav()
-	$(window).scroll(function() {
-				fixedNav()
-			})
+  			fixedNav();
+				$(window).scroll(function () {
+					fixedNav();
+				});
 
 			var initScroll = $(window).scrollTop(), headerHeight = $('#header').height();
 			
-			 function fixedNav() {				
+			 function fixedNav() {
 				 currentScroll = $(window).scrollTop()
 				function inteligent() {
 					if (currentScroll >= initScroll) {console.log(111)
 						//console.log('up')
-						$('#header').removeClass('down')
-						$('#header').addClass('up')
+						$('#header').removeClass('down').addClass('up');
 						if (currentScroll == $(document).height() - $(window).height()) {console.log(1111)
-							$('#header').removeClass('up')
-							$('#header').addClass('down')
+							$('#header').removeClass('up').addClass('down');
 						}
 						initScroll = currentScroll
 					} else {console.log(111111)
 						//console.log('down')
-						$('#header').removeClass('up')
-						$('#header').addClass('down')
+						$('#header').removeClass('up').addClass('down');
 						initScroll = currentScroll
 					}
 				}
